@@ -40,8 +40,10 @@ function deepDup(arr) {
 
   for (let i = 0; i < arr.length; i++) {
     array[i] = deepDup(arr[i])
+    console.log(deepDup(arr[i]));
   }
 
+  //console.log(array);
   return array;
 
 }

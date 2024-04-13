@@ -23,8 +23,14 @@ const subsets = (arr) => {
  }
 
   let first = arr[0];
+  console.log("first: ", first)
+
+  
   let subs = subsets(arr.slice(1))
-  return subs.concat(subs.map(ele => ele.concat(first)))
+  console.log("subs: ", subs);
+  
+  
+  return subs.concat(subs.map(ele => ele.concat(first)));
 }
 
 //console.log(subsets([])); // [[]]
